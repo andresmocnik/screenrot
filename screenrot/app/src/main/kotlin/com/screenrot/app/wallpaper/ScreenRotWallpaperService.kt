@@ -108,10 +108,12 @@ class ScreenRotWallpaperService : WallpaperService() {
             }
         }
 
-        companion object {
-            private const val ANIM_FRAME_INTERVAL_MS = 200L // ~5fps idle animation, plenty for a blink/bob
-            private const val ANIM_STEP = 0.15f
-            private const val REFRESH_INTERVAL_MS = 15 * 60 * 1000L // matches the WorkManager cadence
         }
+            }
+            
+            companion object {
+        private const val ANIM_FRAME_INTERVAL_MS = 200L // ~5fps idle animation, plenty for a blink/bob
+        private const val ANIM_STEP = 0.15f
+        private const val REFRESH_INTERVAL_MS = 15 * 60 * 1000L // matches the WorkManager cadence
     }
 }
